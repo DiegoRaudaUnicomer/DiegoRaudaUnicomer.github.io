@@ -1,0 +1,146 @@
+<html>
+<head>
+  <title>Genera tu CID</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+        <h1 class="mb-1 pb-2">Genera tu CID</h1>
+        <form id="cidform">
+            <div class="form-group">
+                <label for="textInput">Enter URL</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fas fa-link"></i>
+                    </span>
+                  </div>
+                  <input type="text" class="form-control" id="urlInput" placeholder="https://example.com" required>
+                </div>
+              </div>
+            <div class="row">
+                <div class="form-group col">
+                    <label for="objetivo">Campaña</label>
+                    <input type="text" class="form-control" id="campaña" placeholder="nombre de campaña" required>
+                </div>
+                <div class="form-group col">
+                    <label for="implementador">Mes</label>
+                    <select class="form-control" id="mes" required>
+                        <option value="act">Actual</option>
+                        <option value="sig">Siguiente</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row border border-primary rounded p-2 my-2">
+                <div class="form-group col">
+                    <label for="fuente">Fuente</label>
+                    <select class="form-control" id="fuente" required>c
+                        <option value="" class="remove-on-focus">Selecciona una opción</option>
+                        <optgroup label="Favoritas">
+                            <option value="sem">Search Engine Management</option>
+                            <option value="dsc">Discovery Ads</option>
+                            <option value="sho">Shopping</option>
+                            <option value="gdn">Display</option>
+                            <option value="rmktd">Remarketing Display</option>
+                            <option value="fbk">Facebook</option>
+                            <option value="igm">Instagram</option>
+                            <option value="wsp">WhatsApp</option>
+                        </optgroup>
+                        <optgroup label="Otras">
+                            <option value="msv">Masivian</option>
+                            <option value="mch">Mailchimp</option>
+                            <option value="sfc">Salesforce</option>
+                            <option value="ytb">YouTube</option>
+                            <option value="inf">Influencers</option>
+                            <option value="emk">Email Marketing</option>
+                            <option value="sms">SMS</option>
+                            <option value="wze">Waze</option>
+                            <option value="spy">Spotify</option>
+                            <option value="prm">Programmatic</option>
+                            <option value="qrc">QR Codes</option>
+                            <option value="psh">Push Ads</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="form-group col">
+                    <label for="formato">Formato</label>
+                    <select class="form-control" id="formato"- required>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col">
+                    <label for="pais">País</label>
+                    <select class="form-control" id="pais" required>
+                        <option value="" class="remove-on-focus">Selecciona una opción</option>
+                        <option value="ecu">Ecuador</option>
+                        <option value="cr">Costa Rica</option>
+                        <option value="sv">El Salvador</option>
+                        <option value="gt">Guatemala</option>
+                        <option value="hn">Honduras</option>
+                        <option value="ni">Nicaragua</option>
+                        <option value="pry">Paraguay</option>
+                        <option value="us">USA</option>
+                        <option value="t&t">Trinidad & Tobago</option>
+                        <option value="stv">St. Vicent</option>
+                        <option value="stl">St. Lucia</option>
+                        <option value="stk">St. Kitts</option>
+                        <option value="sho">Shopomni</option>
+                        <option value="jc">Jamaica</option>
+                        <option value="guy">Guyana</option>
+                        <option value="gre">Grenada</option>
+                        <option value="dom">Dominicana</option>
+                        <option value="bel">Belize</option>
+                        <option value="bar">Barbados</option>
+                        <option value="ant">Antigua</option>
+                    </select>
+                </div>
+                <div class="form-group col">
+                    <label for="marca">Marca</label>
+                    <select class="form-control" id="marca" required>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col">
+                    <label for="objetivo">Objetivo</label>
+                    <select class="form-control" id="objetivo" required>
+                    <option value="bra">Brand</option>
+                    <option value="per">Performance</option>
+                    </select>
+                </div>
+                <div class="form-group col">
+                    <label for="implementador">Implementador</label>
+                    <select class="form-control" id="implementador" required>
+                    <option value="rgn">Regional</option>
+                    <option value="corp">Corporativo</option>
+                    <option value="lcl">Local</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="textInput">Result</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fas fa-link"></i>
+                    </span>
+                  </div>
+                  <input type="text" class="form-control" id="urlOutput">
+                </div>
+              </div>
+            <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
+        </form>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
