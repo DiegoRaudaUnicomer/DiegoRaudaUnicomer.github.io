@@ -49,12 +49,19 @@ $(document).ready(function() {
             '<option value="dpa">Catalogue</option>' +
             '</optgroup>');
         } else if (selectedCategory === "igm") {
-            $subcategoryDropdown.append('<option value="car">Carousel</option>');
-            $subcategoryDropdown.append('<option value="sto">Story</option>');
-            $subcategoryDropdown.append('<option value="post">Post</option>');
-            $subcategoryDropdown.append('<option value="ppl">Multiplacemente Pay Per Lead</option>');
-            $subcategoryDropdown.append('<option value="coll">Collection</option>');
-            $subcategoryDropdown.append('<option value="dpa">Catalogue</option>');
+            $subcategoryDropdown.append('<optgroup label="Orgánico">' +
+            '<option value="car-org">Carousel Orgánico</option>' +
+            '<option value="sto-org">Story Orgánico</option>' +
+            '<option value="post-org">Post Orgánico</option>' +
+            '</optgroup>' +
+'<optgroup label="Pago">' +
+            '<option value="car">Carousel</option>' +
+            '<option value="sto">Story</option>' +
+            '<option value="post">Post</option>' +
+            '<option value="ppl">Multiplacemente Pay Per Lead</option>' +
+            '<option value="coll">Collection</option>' +
+            '<option value="dpa">Catalogue</option>' +
+            '</optgroup>');
         } else if (selectedCategory ==="wsp") {
             $subcategoryDropdown.append('<option value="car">Carousel</option>');
             $subcategoryDropdown.append('<option value="sto">Story</option>');
