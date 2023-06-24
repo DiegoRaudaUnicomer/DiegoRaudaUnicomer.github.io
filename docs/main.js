@@ -92,7 +92,7 @@ $(document).ready(function() {
         } else if (selectedCategory === "spy") {
             $subcategoryDropdown.append('<option value="rich">Rich Media</option>');
         } else if (selectedCategory === "prm") {
-            $subcategoryDropdown.append('<option value="ban">Banner Static</option>');
+            $subcategoryDropdown.append('<option value="ban-stat">Banner Static</option>');
             $subcategoryDropdown.append('<option value="ban-gif">Banner Gif</option>')        
         } else if (selectedCategory === "qrc") {
             $subcategoryDropdown.append('<option value="rich">Rich Media</option>');
